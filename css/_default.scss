@@ -136,7 +136,18 @@ header{
 }
 .b1_left{
   flex-grow: 1;
-  padding-top: 125px;
+  padding-top: 35px;
+  position: relative;
+}
+.b1_map{
+  max-width: 668px;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  >img{
+    display: block;    
+    width: 100%;
+  }
 }
 .b1_text{
   max-width: 670px;
@@ -598,11 +609,17 @@ header{
   flex: 1;
 }
 .b7g_bot{
-  height: 170px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
   margin-top: 15px;
+}
+.b7_btn{
+  max-width: 217px;
+  width: 100%;
+  margin: 40px auto 0;
+  font-weight: 700;
+  padding: 0;
 }
 .b8_wrap{
   padding: 40px 0;

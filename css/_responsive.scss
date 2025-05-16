@@ -15,6 +15,9 @@
 .h_items{
   gap: 30px;
 }
+.b1_map{
+  max-width: 42dvw;
+}
 
 } /*1400*/
 @media only screen and (max-width : 1200px){
@@ -249,7 +252,11 @@ header{
 footer{
   padding: 30px 0;
 }
-
+.b1_map{
+  max-width: 100%;
+  position: static;
+  margin-top: 15px;
+}
 
 
 } /*1024*/
@@ -354,6 +361,36 @@ h2{
   padding: 30px 0;
   background: none;
 }
+.logo{
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  transform: translateY(0);
+}
+.h_time, .h_callback{
+  display: none;
+}
+.h_email{
+  display: flex;
+  margin-top: 60px;
+}
+.h_tel{
+  position: absolute;
+  right: unset;
+  top: 70px;
+  left: 15px;
+}
+.b1_btn{
+  position: absolute;
+  right: 15px;
+  top: -10px;
+}
+.b1_left{
+  padding-top: 90px;
+}
+.b1_map{
+  display: none;
+}
 
 
 } /*768*/
@@ -367,9 +404,9 @@ h2{
 .header{
   gap: 15px;
 }
-.logo{
+/* .logo{
   width: 140px;
-}
+} */
 .h_tel{
   font-size: 14px;
   margin-top: 2px;
@@ -377,8 +414,12 @@ h2{
     display: none;
   }
 }
-.h_callback{
-  font-size: 14px;
+.b1_btn{
+  font-size: 14px;  
+  padding: 0 10px;
+}
+.h_callback{  
+  font-size: 12px;
   padding: 0 14px;
 }
 .h_items{

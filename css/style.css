@@ -224,7 +224,19 @@ header {
 
 .b1_left {
   flex-grow: 1;
-  padding-top: 125px;
+  padding-top: 35px;
+  position: relative;
+}
+
+.b1_map {
+  max-width: 668px;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+}
+.b1_map > img {
+  display: block;
+  width: 100%;
 }
 
 .b1_text {
@@ -753,11 +765,18 @@ header {
 }
 
 .b7g_bot {
-  height: 170px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
   margin-top: 15px;
+}
+
+.b7_btn {
+  max-width: 217px;
+  width: 100%;
+  margin: 40px auto 0;
+  font-weight: 700;
+  padding: 0;
 }
 
 .b8_wrap {
@@ -870,6 +889,9 @@ footer {
   }
   .h_items {
     gap: 30px;
+  }
+  .b1_map {
+    max-width: 42dvw;
   }
 } /*1400*/
 @media only screen and (max-width: 1200px) {
@@ -1096,6 +1118,11 @@ footer {
   footer {
     padding: 30px 0;
   }
+  .b1_map {
+    max-width: 100%;
+    position: static;
+    margin-top: 15px;
+  }
 } /*1024*/
 @media only screen and (max-width: 768px) {
   h1 {
@@ -1198,6 +1225,36 @@ footer {
     padding: 30px 0;
     background: none;
   }
+  .logo {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(0);
+  }
+  .h_time, .h_email, .h_callback {
+    display: none;
+  }
+  .h_email {
+    display: flex;
+    margin-top: 60px;
+  }
+  .h_tel {
+    position: absolute;
+    right: unset;
+    top: 70px;
+    left: 15px;
+  }
+  .b1_btn {
+    position: absolute;
+    right: 15px;
+    top: -10px;
+  }
+  .b1_left {
+    padding-top: 90px;
+  }
+  .b1_map {
+    display: none;
+  }
 } /*768*/
 @media only screen and (max-width: 480px) {
   h1 {
@@ -1209,9 +1266,9 @@ footer {
   .header, .footer {
     gap: 15px;
   }
-  .logo {
+  /* .logo{
     width: 140px;
-  }
+  } */
   .h_tel {
     font-size: 14px;
     margin-top: 2px;
@@ -1219,8 +1276,12 @@ footer {
   .h_tel:before {
     display: none;
   }
-  .h_callback {
+  .b1_btn {
     font-size: 14px;
+    padding: 0 10px;
+  }
+  .h_callback {
+    font-size: 12px;
     padding: 0 14px;
   }
   .h_items {
